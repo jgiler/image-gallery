@@ -1,0 +1,24 @@
+{
+  "name": "images-demo",
+  "version": "1.0.0",
+  "description": "Gallery App",
+  "main": "index.js",
+  "scripts": {
+    "start": "if-env NODE_ENV=production && npm run start.prod || npm run start:dev",
+    "start:dev": "nodemon server.js",
+    "start:prod": "node server.js",
+    "install": "npm run seed",
+    "seed": "node seeders/seed.js",
+    "heroku-postbuild": "npm run seed"
+  },
+  "author": "Brian Shin",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.16.4",
+    "mongoose": "^5.5.8"
+  },
+  "devDependencies": {
+    "nodemon": "*"
+  }
+}
