@@ -11,7 +11,7 @@
     "seed": "node seeders/seed.js",
     "heroku-postbuild": "npm run seed"
   },
-  "author": "Brian Shin",
+  "author": "Jonathan Giler",
   "license": "MIT",
   "dependencies": {
     "dotenv": "^8.2.0",
